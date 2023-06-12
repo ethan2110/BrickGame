@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class GamePlay extends JPanel implements KeyListener, ActionListener  {
+class GamePlay extends JPanel implements KeyListener, ActionListener  { //implements key listener to recieve keys on your keyboard action listener to translate those into actions
     private boolean play = true;
-    private int score = 0;
+    private int score = 0; //tracks score
     
     private int totalBricks = 21;
     
@@ -13,15 +13,15 @@ class GamePlay extends JPanel implements KeyListener, ActionListener  {
     
     private int playerX = 310;
     
-    private int ballposX = 120;
+    private int ballposX = 120; //sets ball position x and y
     private int ballposY = 350;
-    private int ballXdir = -1;
+    private int ballXdir = -1; //sets the direction the ball is going in
     private int ballYdir = -2;
     
     private MapGenerator map;
     
     public GamePlay() {
-        map = new MapGenerator(3, 7);
+        map = new MapGenerator(3, 7); //generates the map dimensions
         addKeyListener(this);
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
@@ -184,7 +184,7 @@ class GamePlay extends JPanel implements KeyListener, ActionListener  {
         
     
     @Override
-    public void keyReleased(KeyEvent arg0) {
+    public void keyReleased(KeyEvent arg0) { //checks if key is released
         
     }
 }
