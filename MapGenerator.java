@@ -16,8 +16,8 @@ class MapGenerator {
             }
         }
         
-        brickWidth = 540/col;
-        brickHeight = 150/row;
+        brickWidth = 540/col; //width   
+        brickHeight = 150/row; //height
     }
     
     public void draw(Graphics2D g) { // this draws the bricks
